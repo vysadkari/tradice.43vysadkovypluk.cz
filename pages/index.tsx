@@ -1,14 +1,14 @@
-import PromoCard, { PromoCardProps } from "@/components/PromoCard";
+import Card, { CardProps } from "@/components/Card";
+import Quote from "@/components/Quote";
 import Head from "next/head";
-import Image from "next/image";
 
-const largePromo: PromoCardProps = {
+const largePromo: CardProps = {
   backgroundImage: "assets/images/homepage/promo/charon.jpg",
   title: "Nůž pro výsadkáře",
   url: "/charon",
 };
 
-const promo: Array<PromoCardProps> = [
+const promo: Array<CardProps> = [
   {
     backgroundImage: "assets/images/homepage/promo/historie.jpg",
     title: "Počátky výsadkářů",
@@ -44,28 +44,16 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='flex flex-col gap-5 prose prose-invert max-w-none p-5'>
-        <div className='flex flex-row gap-5 items-center group'>
-          <Image
-            src='/assets/images/homepage/browning.jpg'
-            width={200}
-            height={200}
-            alt='generálmajor Frederick Browning'
-            className='rounded-full border-0 border-stone-500 my-0'
-            style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, .7))" }}
-          />
-          <blockquote className='border-stone-500 group-hover:border-primary transition-colors duration-200 my-0 pl-5'>
-            <p className='text-3xl mt-0 text-shadow'>
-              Výsadkáři nemají žádnou minulost, ale o to slavnější budou mít
-              budoucnost!
-            </p>
-            <footer className='text-xl text-stone-500 text-shadow'>
-              generálmajor Frederick Browning
-            </footer>
-          </blockquote>
-        </div>
+      <div className='flex flex-col gap-5 p-5'>
+        <Quote
+          author='generálmajor Frederick Browning'
+          image='/assets/images/homepage/browning.jpg'
+        >
+          Výsadkáři nemají žádnou minulost, ale o to slavnější budou mít
+          budoucnost!
+        </Quote>
 
-        <p className='mt-0 text-lg'>
+        <p className='mt-0 text-lg prose prose-invert max-w-none'>
           Citát z roku 1941 je připisovaný &quot;otci&quot; britských
           výsadkových jednotek, prvnímu veliteli 1. výsadkové divize,
           generálmajorovi Fredericku Browningovi. Výrok, bezpochyby platný ve
@@ -74,9 +62,9 @@ export default function Home() {
         </p>
       </div>
 
-      <div className='grid grid-cols-2 p-5 gap-5'>
+      <div className='grid grid-cols-2 gap-5 p-5'>
         <div className='col-span-2'>
-          <PromoCard
+          <Card
             backgroundImage={largePromo.backgroundImage}
             title={largePromo.title}
             url={largePromo.url}
@@ -84,10 +72,10 @@ export default function Home() {
         </div>
 
         {promo.map(
-          ({ backgroundImage, title, url }: PromoCardProps, index: number) => {
+          ({ backgroundImage, title, url }: CardProps, index: number) => {
             return (
               <div key={index}>
-                <PromoCard
+                <Card
                   backgroundImage={backgroundImage}
                   title={title}
                   url={url}
