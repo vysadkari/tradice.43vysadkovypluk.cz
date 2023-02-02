@@ -81,7 +81,10 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Layout.Intro />
+      <Layout.Intro
+        title='Historie'
+        backgroundImage='/assets/images/historie/intro.jpg'
+      />
 
       <Layout.Content>
         <div className='flex flex-col items-center p-5 pt-12 text-white'>

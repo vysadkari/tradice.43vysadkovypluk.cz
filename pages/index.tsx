@@ -45,7 +45,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Layout.Intro />
+      <Layout.Intro
+        showLogo
+        title='Tradice výsadkářů'
+        backgroundImage='/assets/images/homepage/intro.jpg'
+      />
 
       <Layout.Content>
         <div className='flex flex-col gap-5 p-5'>
