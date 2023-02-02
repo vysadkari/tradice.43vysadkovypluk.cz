@@ -1,5 +1,6 @@
 import Card, { CardProps } from "@/components/Card";
 import Quote from "@/components/Quote";
+import Layout from "@/layout/Layout";
 import Head from "next/head";
 
 const largePromo: CardProps = {
@@ -33,7 +34,7 @@ const promo: Array<CardProps> = [
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Tradice výsadkářů</title>
         <meta
@@ -44,47 +45,51 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='flex flex-col gap-5 p-5'>
-        <Quote
-          author='generálmajor Frederick Browning'
-          image='/assets/images/homepage/browning.jpg'
-        >
-          Výsadkáři nemají žádnou minulost, ale o to slavnější budou mít
-          budoucnost!
-        </Quote>
+      <Layout.Intro />
 
-        <p className='mt-0 text-lg prose prose-invert max-w-none'>
-          Citát z roku 1941 je připisovaný &quot;otci&quot; britských
-          výsadkových jednotek, prvnímu veliteli 1. výsadkové divize,
-          generálmajorovi Fredericku Browningovi. Výrok, bezpochyby platný ve
-          své době, je dnes přesný už jen ve své druhé části. Přesvědčte se o
-          tom sami.
-        </p>
-      </div>
+      <Layout.Content>
+        <div className='flex flex-col gap-5 p-5'>
+          <Quote
+            author='generálmajor Frederick Browning'
+            image='/assets/images/homepage/browning.jpg'
+          >
+            Výsadkáři nemají žádnou minulost, ale o to slavnější budou mít
+            budoucnost!
+          </Quote>
 
-      <div className='grid grid-cols-2 gap-5 p-5'>
-        <div className='col-span-2'>
-          <Card
-            backgroundImage={largePromo.backgroundImage}
-            title={largePromo.title}
-            url={largePromo.url}
-          />
+          <p className='mt-0 text-lg prose prose-invert max-w-none'>
+            Citát z roku 1941 je připisovaný &quot;otci&quot; britských
+            výsadkových jednotek, prvnímu veliteli 1. výsadkové divize,
+            generálmajorovi Fredericku Browningovi. Výrok, bezpochyby platný ve
+            své době, je dnes přesný už jen ve své druhé části. Přesvědčte se o
+            tom sami.
+          </p>
         </div>
 
-        {promo.map(
-          ({ backgroundImage, title, url }: CardProps, index: number) => {
-            return (
-              <div key={index}>
-                <Card
-                  backgroundImage={backgroundImage}
-                  title={title}
-                  url={url}
-                />
-              </div>
-            );
-          }
-        )}
-      </div>
-    </>
+        <div className='grid grid-cols-2 gap-5 p-5'>
+          <div className='col-span-2'>
+            <Card
+              backgroundImage={largePromo.backgroundImage}
+              title={largePromo.title}
+              url={largePromo.url}
+            />
+          </div>
+
+          {promo.map(
+            ({ backgroundImage, title, url }: CardProps, index: number) => {
+              return (
+                <div key={index}>
+                  <Card
+                    backgroundImage={backgroundImage}
+                    title={title}
+                    url={url}
+                  />
+                </div>
+              );
+            }
+          )}
+        </div>
+      </Layout.Content>
+    </Layout>
   );
 }
