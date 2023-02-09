@@ -68,7 +68,7 @@ const TimelineItemRight = ({
   );
 };
 
-const Home = () => {
+const HistoryPage = () => {
   return (
     <Layout>
       <Head>
@@ -202,4 +202,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HistoryPage;
