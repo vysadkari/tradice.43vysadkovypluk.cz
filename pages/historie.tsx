@@ -19,7 +19,7 @@ const TimelineItemLeft = ({
   children,
 }: TimelineItemProps) => {
   return (
-    <div className='relative w-4/5 border-b-4 border-l-4 rounded-bl-3xl border-primary group'>
+    <div className='relative w-full border-b-4 border-l-4 rounded-bl-3xl border-primary group'>
       <div className='absolute grid w-16 h-16 font-semibold transition-colors duration-150 -translate-x-1/2 -translate-y-1/2 border-4 rounded-full border-primary bg-stone-900 group-hover:bg-primary place-content-center'>
         {year}
       </div>
@@ -31,7 +31,7 @@ const TimelineItemLeft = ({
             width={400}
             height={270}
             alt={title}
-            className='my-0 rounded-lg drop-shadow-black'
+            className='w-full my-0 rounded-lg drop-shadow-black'
           />
           <p className='my-0 text-justify'>{children}</p>
         </div>
@@ -47,7 +47,7 @@ const TimelineItemRight = ({
   children,
 }: TimelineItemProps) => {
   return (
-    <div className='relative w-4/5 border-b-4 border-r-4 rounded-br-3xl border-primary group'>
+    <div className='relative w-full border-b-4 border-r-4 rounded-br-3xl border-primary group'>
       <div className='absolute top-0 right-0 grid w-16 h-16 font-semibold transition-colors duration-150 translate-x-1/2 -translate-y-1/2 border-4 rounded-full border-primary bg-stone-900 place-content-center group-hover:bg-primary'>
         {year}
       </div>
@@ -60,7 +60,7 @@ const TimelineItemRight = ({
             width={400}
             height={270}
             alt={title}
-            className='my-0 rounded-lg drop-shadow-black'
+            className='w-full my-0 rounded-lg drop-shadow-black'
           />
         </div>
       </div>
@@ -87,7 +87,7 @@ const Home = () => {
       />
 
       <Layout.Content>
-        <div className='flex flex-col items-center p-5 pt-12 text-white'>
+        <div className='flex flex-col items-center p-10 pt-12 text-white'>
           <TimelineItemLeft
             year={1941}
             title='2. světová válka'
