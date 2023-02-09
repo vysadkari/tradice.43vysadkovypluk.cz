@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import Footer, {
   Social,
   Link,
+  ContactRecord,
   AboutUs,
   ExternalLinks,
   Contact,
@@ -16,6 +17,9 @@ import {
   InstagramIcon,
   SpotifyIcon,
   YoutubeIcon,
+  LocationIcon,
+  PhoneIcon,
+  EmailIcon,
 } from "@/components/Icons";
 
 interface LayoutProps {
@@ -115,6 +119,56 @@ const aboutUsLinks: Array<Link> = [
   },
 ];
 
+const contacts: Array<ContactRecord> = [
+  {
+    icon: LocationIcon,
+    content: (
+      <a
+        href='https://mapy.cz/s/bamumocava'
+        target='_blank'
+        rel='noreferrer'
+        className='flex items-center hover:underline'
+      >
+        <address className='not-italic'>
+          Obce Ležáků 14
+          <br />
+          573 01 Chrudim
+        </address>
+      </a>
+    ),
+  },
+  {
+    icon: PhoneIcon,
+    content: (
+      <address className='not-italic'>
+        <a className='hover:underline' href='tel:+420973248239'>
+          973 248 239
+        </a>{" "}
+        <span className='text-gray-500'>(personální oddělení)</span>
+        <br />
+        <a className='hover:underline' href='tel:+420776115033'>
+          776 115 033
+        </a>{" "}
+        <span className='text-gray-500'>(tiskový mluvčí)</span>
+      </address>
+    ),
+  },
+  {
+    icon: EmailIcon,
+    content: (
+      <address className='not-italic'>
+        <a href='mailto:info@43vysadkovypluk.cz' className='hover:underline'>
+          info@43vysadkovypluk.cz
+        </a>
+        <br />
+        <a href='mailto:az@43vysadkovypluk.cz' className='hover:underline'>
+          az@43vysadkovypluk.cz
+        </a>
+      </address>
+    ),
+  },
+];
+
 const Content = ({ children }: LayoutContentProps) => {
   return <main className='container mx-auto bg-stone-900'>{children}</main>;
 };
@@ -130,7 +184,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className='grid grid-cols-1 gap-5 p-5 sm:grid-cols-2 lg:grid-cols-3'>
           <AboutUs links={aboutUsLinks} />
           <ExternalLinks links={externalLinks} />
-          <Contact />
+          <Contact contacts={contacts} />
         </div>
         <Bottom socialLinks={socialLinks} />
       </Footer>
