@@ -68,7 +68,7 @@ const Header = ({ activeItem, menuItems }: HeaderProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className='fixed bg-repeat-x top-0 left-0 right-0 z-10 backdrop-filter backdrop-blur text-[13px] bg-gradient-to-r from-black/70 to-primary/70 box-shadow-d-lg'>
+    <div className='fixed bg-repeat-x top-0 left-0 right-0 z-50 backdrop-filter backdrop-blur text-[13px] bg-gradient-to-r from-black/70 to-primary/70 box-shadow-d-lg'>
       <div className='container flex flex-wrap items-center justify-between p-3 mx-auto lg:p-0'>
         <Link className='z-50' href='/'>
           <Logo />
