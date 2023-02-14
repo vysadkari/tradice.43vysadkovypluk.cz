@@ -31,13 +31,9 @@ const TimelineItemLeft = ({
             width={400}
             height={270}
             alt={title}
-            className='w-full my-0 rounded-lg drop-shadow-black z-0'
-            style={{ gridArea: "1 / 1 / 1 / 4" }}
+            className='w-full my-0 rounded-lg drop-shadow-black z-0 grid-area-[1_1_1_4]'
           />
-          <p
-            className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm'
-            style={{ gridArea: "1 / 3 / 1 / 5" }}
-          >
+          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm grid-area-[1_3_1_5]'>
             {children}
           </p>
         </div>
@@ -60,10 +56,7 @@ const TimelineItemRight = ({
       <div className='flex flex-col gap-5 pt-5 pb-10 pl-5 pr-10 prose prose-invert max-w-none'>
         <h2 className='mb-0 text-center text-shadow'>{title}</h2>
         <div className='grid grid-cols-4 gap-5 items-center'>
-          <p
-            className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm'
-            style={{ gridArea: "1 / 1 /1 / 3" }}
-          >
+          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm grid-area-[1_1_1_3]'>
             {children}
           </p>
           <Image
@@ -71,8 +64,7 @@ const TimelineItemRight = ({
             width={400}
             height={270}
             alt={title}
-            className='w-full my-0 rounded-lg drop-shadow-black z-0'
-            style={{ gridArea: "1 / 2 / 1 / 5" }}
+            className='w-full my-0 rounded-lg drop-shadow-black z-0 grid-area-[1_2_1_5]'
           />
         </div>
       </div>
