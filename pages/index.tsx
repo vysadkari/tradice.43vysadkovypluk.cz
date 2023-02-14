@@ -61,7 +61,7 @@ export default function Home() {
             budoucnost!
           </Quote>
 
-          <p className='mt-0 text-lg prose prose-invert max-w-none'>
+          <p className='mt-0 text-lg text-shadow prose prose-invert max-w-none'>
             Citát z roku 1941 je připisovaný &quot;otci&quot; britských
             výsadkových jednotek, prvnímu veliteli 1. výsadkové divize,
             generálmajorovi Fredericku Browningovi. Výrok, bezpochyby platný ve
