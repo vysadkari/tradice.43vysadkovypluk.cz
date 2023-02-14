@@ -28,8 +28,8 @@ const TimelineItemLeft = ({
         <div className='grid grid-cols-4 gap-5 items-center'>
           <Image
             src={image}
-            width={400}
-            height={270}
+            width={800}
+            height={550}
             alt={title}
             className='w-full my-0 rounded-lg drop-shadow-black z-0 grid-area-[1_1_1_4]'
           />
@@ -61,8 +61,8 @@ const TimelineItemRight = ({
           </p>
           <Image
             src={image}
-            width={400}
-            height={270}
+            width={800}
+            height={550}
             alt={title}
             className='w-full my-0 rounded-lg drop-shadow-black z-0 grid-area-[1_2_1_5]'
           />
