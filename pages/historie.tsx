@@ -19,21 +19,21 @@ const TimelineItemLeft = ({
   children,
 }: TimelineItemProps) => {
   return (
-    <div className='relative w-full border-b-4 border-l-4 rounded-bl-3xl border-primary group'>
+    <div className='relative w-full md:border-b-4 border-l-4 md:rounded-bl-3xl border-primary group'>
       <div className='absolute grid w-16 h-16 font-semibold transition-colors duration-150 -translate-x-1/2 -translate-y-1/2 border-4 rounded-full border-primary bg-stone-900 group-hover:bg-primary place-content-center'>
         {year}
       </div>
       <div className='flex flex-col gap-5 pt-5 pb-10 pl-10 pr-5 prose prose-invert max-w-none'>
         <h2 className='mb-0 text-center text-shadow'>{title}</h2>
-        <div className='grid grid-cols-4 gap-5 items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-5 items-center'>
           <Image
             src={image}
             width={800}
             height={550}
             alt={title}
-            className='w-full my-0 rounded-lg drop-shadow-black z-0 grid-area-[1_1_1_4]'
+            className='w-full my-0 rounded-lg drop-shadow-black z-0 md:grid-area-[1_1_1_4]'
           />
-          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm grid-area-[1_3_1_5]'>
+          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm md:grid-area-[1_3_1_5]'>
             {children}
           </p>
         </div>
@@ -49,14 +49,14 @@ const TimelineItemRight = ({
   children,
 }: TimelineItemProps) => {
   return (
-    <div className='relative w-full border-b-4 border-r-4 rounded-br-3xl border-primary group'>
-      <div className='absolute top-0 right-0 grid w-16 h-16 font-semibold transition-colors duration-150 translate-x-1/2 -translate-y-1/2 border-4 rounded-full border-primary bg-stone-900 place-content-center group-hover:bg-primary'>
+    <div className='relative w-full md:border-b-4 md:border-r-4 border-l-4 md:border-l-0 md:rounded-br-3xl border-primary group'>
+      <div className='absolute top-0 left-0 md:right-0 grid w-16 h-16 font-semibold transition-colors duration-150 -translate-x-1/2 md:translate-x-1/2 -translate-y-1/2 border-4 rounded-full border-primary bg-stone-900 place-content-center group-hover:bg-primary'>
         {year}
       </div>
-      <div className='flex flex-col gap-5 pt-5 pb-10 pl-5 pr-10 prose prose-invert max-w-none'>
+      <div className='flex flex-col gap-5 pt-5 pb-10 pl-10 md:pl-5 pr-5 md:pr-10 prose prose-invert max-w-none'>
         <h2 className='mb-0 text-center text-shadow'>{title}</h2>
-        <div className='grid grid-cols-4 gap-5 items-center'>
-          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm grid-area-[1_1_1_3]'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-5 items-center'>
+          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm md:grid-area-[1_1_1_3] order-last md:order-first'>
             {children}
           </p>
           <Image
@@ -64,7 +64,7 @@ const TimelineItemRight = ({
             width={800}
             height={550}
             alt={title}
-            className='w-full my-0 rounded-lg drop-shadow-black z-0 grid-area-[1_2_1_5]'
+            className='w-full my-0 rounded-lg drop-shadow-black z-0 md:grid-area-[1_2_1_5]'
           />
         </div>
       </div>
