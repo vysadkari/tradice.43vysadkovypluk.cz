@@ -50,7 +50,7 @@ const TimelineItemRight = ({
 }: TimelineItemProps) => {
   return (
     <div className='relative w-full md:border-b-4 md:border-r-4 border-l-4 md:border-l-0 md:rounded-br-3xl border-primary group'>
-      <div className='absolute top-0 left-0 md:right-0 grid w-16 h-16 font-semibold transition-colors duration-150 -translate-x-1/2 md:translate-x-1/2 -translate-y-1/2 border-4 rounded-full border-primary bg-stone-900 place-content-center group-hover:bg-primary'>
+      <div className='absolute top-0 left-0 md:left-auto md:right-0 grid w-16 h-16 font-semibold transition-colors duration-150 -translate-x-1/2 md:translate-x-1/2 -translate-y-1/2 border-4 rounded-full border-primary bg-stone-900 place-content-center group-hover:bg-primary'>
         {year}
       </div>
       <div className='flex flex-col gap-5 pt-5 pb-10 pl-10 md:pl-5 pr-5 md:pr-10 prose prose-invert max-w-none'>
