@@ -261,7 +261,7 @@ const DeploymentPage = () => {
       />
 
       <Layout.Content>
-        <div className='h-[32rem] overflow-hidden relative'>
+        <div className='h-96 md:h-[32rem] overflow-hidden relative'>
           <div className='absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-stone-900 to-transparent'></div>
           <div className='absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-stone-900 to-transparent'></div>
           <ComposableMap

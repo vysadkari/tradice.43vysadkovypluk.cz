@@ -48,7 +48,7 @@ const Deployment = ({
           {country}
         </h2>
       </div>
-      <div className='grid grid-cols-2 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 md:gap-10'>
         <div>
           <h3>Situace v zemi</h3>
           {situation}
