@@ -22,8 +22,8 @@ const CharonPage = () => {
       />
 
       <Layout.Content>
-        <div className='grid items-center grid-cols-3 gap-0 p-10'>
-          <div className='z-10 col-start-1 col-end-3 p-5 text-lg prose border-t prose-invert max-w-none bg-black/70 rounded-xl border-stone-800 drop-shadow-black backdrop-blur-sm'>
+        <div className='grid items-center grid-cols-1 md:grid-cols-3 gap-0 p-10'>
+          <div className='z-10 md:col-start-1 md:col-end-3 p-5 text-lg prose border-t prose-invert max-w-none bg-black/70 rounded-t-xl md:rounded-xl border-stone-800 md:drop-shadow-black backdrop-blur-sm'>
             <p>
               Duchovními otci nože byli podplukovník Aleš Opata a nadporučík
               Roman Hippík.
@@ -44,11 +44,11 @@ const CharonPage = () => {
             width={2000}
             height={1125}
             alt='Cháron'
-            className='z-0 col-start-2 col-end-4 -mt-24 border-t rounded-xl drop-shadow-black border-stone-800'
+            className='z-0 md:col-start-2 md:col-end-4 md:-mt-24 md:border-t rounded-b-xl md:rounded-xl md:drop-shadow-black border-stone-800'
           />
         </div>
 
-        <div className='grid grid-cols-3 gap-10 p-10'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 p-10'>
           <div className='flex flex-col items-center gap-5 p-5 text-xl text-white border-t bg-black/70 drop-shadow-black border-stone-800 rounded-xl'>
             <span>Kaleno na</span>
             <span className='text-6xl font-semibold text-shadow text-primary'>
@@ -76,11 +76,11 @@ const CharonPage = () => {
           <iframe
             src='https://www.youtube-nocookie.com/embed/sJ9AkRkaCQE'
             allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-            className='w-4/5 border-t aspect-video rounded-xl drop-shadow-black border-stone-500'
+            className='w-full md:w-4/5 border-t aspect-video rounded-xl drop-shadow-black border-stone-500'
           ></iframe>
         </div>
 
-        <div className='grid items-end grid-cols-2 gap-10 p-10 pb-0'>
+        <div className='grid items-end grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-0'>
           <div>
             <div className='p-5 mb-10 prose prose-invert bg-black/70 rounded-xl drop-shadow-black'>
               <p>
