@@ -16,19 +16,19 @@ const fantasticFour: Array<Person> = [
     name: "plk. Jiří Líbal",
     position: "velitel 43. výsadkového pluku",
     photo: "/assets/images/velitele/portrety/jiri-libal.jpg",
-    bio: "Současný velitel 43. výsadkového pluku, který dříve velel mechanizovanému praporu v Žatci a byl náčelníkem výsadkového vojska.",
+    bio: "Do „výsadkářské“ Chrudimi jsem nastoupil z Prahy, kde jsem zastával funkci náčelníka výsadkového vojska a výsadkové a záchranné služby na generálním štábu. Díky tomu jsem měl vliv i přehled, co pluk dělá a potřebuje. Výsadkářem jsem už od svého studia na vysoké škole ve Vyškově, kde jsem byl členem skupiny, která prováděla výsadkový výcvik. Všechny mé pozice v armádě byly vždy výsadkové (od velitele čety po velitele praporu). Zkušenosti jsem také získával na misích v Bosně, Kosovu, Afganistánu a Litvě, jako instruktor a velitel kurzu Komando a BMATT a v neposlední řadě na školách v USA (Command and General Staff College a US Army War College). Je pro mě ctí velet 43. výsadkovému pluku.",
   },
   {
     name: "pplk. Petr Matouš",
     position: "zástupce velitele",
     photo: "/assets/images/velitele/portrety/petr-matous.jpg",
-    bio: "Že by chtěl být vojákem, ho napadlo v 15 letech, když ležel v nemocnici se zlomenou páteří. O sedm let později byl Petr Matouš v nejelitnějším útvaru české armády a letos v říjnu převzal státní vyznamenání za zneškodnění pachatelů teroristických útoků v Afghánistánu.",
+    bio: "K výsadkovému vojsku mě to táhlo už od vojenské vysoké školy z dob skupiny Commandos, kdy jsme začali skákat v civilu. Výsadkářem jsem byl následně celou předchozí službu u 601. skupiny speciálních sil, se kterou jsem byl 4x nasazen v Afghánistánu a 2x v Africe. Během své služby jsem působil na Úřadu vlády jako vojenský přidělenec MO - poradce předsedy vlády a koordinátor agendy čelení hybridnímu působení (pro Odbornou pracovní skupinu Bezpečnostní rady státu). Na výsadkový pluk jsem nastoupil k 1. 11. 2022 z pozice poradce ministryně obrany. Být součástí velení 43. výsadkového pluku pro mě znamená čest a hrdost. ",
   },
   {
     name: "pplk. Marek Štěpánek",
     position: "náčelník štábu",
     photo: "/assets/images/velitele/portrety/marek-stepanek.jpg",
-    bio: "Bývalý velitel 2. výsadkové roty, který se v roce 2021 stal náčelníkem štábu 43. výsadkového pluku.",
+    bio: "",
   },
   {
     name: "nprap. Robert Otáhal",
@@ -233,7 +233,7 @@ const CommandersPage = () => {
       />
 
       <Layout.Content>
-        <div className='grid grid-cols-1 gap-32 py-20'>
+        <div className='grid grid-cols-1 gap-10 py-20'>
           {fantasticFour.map((person: Person) => (
             <Bio person={person} key={person.name} />
           ))}
@@ -257,7 +257,7 @@ const CommandersPage = () => {
                   />
                   <span>{unit.name}</span>
                 </h3>
-                <div className='grid grid-cols-5 gap-10 mt-10'>
+                <div className='grid grid-cols-2 md:grid-cols-5 gap-10 mt-10'>
                   {unit.commanders.map((commander: CommanderPortrait) => (
                     <Portrait
                       name={commander.name}

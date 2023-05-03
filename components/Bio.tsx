@@ -21,17 +21,17 @@ interface BioProps {
 const Bio = ({ person }: BioProps) => {
   return (
     <div>
-      <div className='grid grid-cols-3 gap-10 px-10 bg-primary-dark border-y-2 border-primary '>
-        <div className='-my-10'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 p-10 bg-primary-dark border-y-2 border-primary '>
+        <div>
           <Image
             src={person.photo}
             width={400}
             height={400}
             alt={person.name}
-            className='rounded-xl drop-shadow-black'
+            className='rounded-xl drop-shadow-black w-full'
           />
         </div>
-        <div className='flex flex-col justify-center col-span-2 prose prose-invert max-w-none'>
+        <div className='flex flex-col justify-center md:col-span-2 prose prose-invert max-w-none'>
           <h2 className='mb-0 text-shadow'>{person.name}</h2>
           <p className='opacity-60'>{person.position}</p>
           <p>{person.bio}</p>
