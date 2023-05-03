@@ -104,9 +104,9 @@ const UniformPage = () => {
         <h2 className='py-3 text-2xl font-semibold text-center text-white bg-gradient-to-r from-transparent via-primary-dark to-transparent text-shadow'>
           Baret
         </h2>
-        <div className='grid items-center grid-cols-3 p-10'>
-          <div className='z-10 col-span-2 -mr-10 backdrop-blur-sm drop-shadow-black'>
-            <div className='p-5 prose border-t prose-invert bg-black/70 rounded-xl max-w-none border-stone-800'>
+        <div className='grid items-center grid-cols-1 md:grid-cols-3 p-10'>
+          <div className='z-10 md:col-span-2 md:-mr-10 backdrop-blur-sm md:drop-shadow-black'>
+            <div className='p-5 prose border-t prose-invert bg-black/70 rounded-t-xl md:rounded-xl max-w-none border-stone-800'>
               <p>
                 Původ červeného (správně „vínového“) baretu sahá, jako celá
                 tradice výsadkových sil, až do období 2. světové války. První
@@ -135,7 +135,7 @@ const UniformPage = () => {
             width={725}
             height={725}
             alt='Červený baret'
-            className='rounded-xl'
+            className='rounded-b-xl md:rounded-xl'
           />
         </div>
 
@@ -143,17 +143,17 @@ const UniformPage = () => {
           Bojový prapor
         </h2>
 
-        <div className='grid items-center grid-cols-6 gap-5 p-10'>
+        <div className='grid items-center grid-cols-1 md:grid-cols-6 gap-0 md:gap-5 p-10'>
           <Image
             src='/assets/images/uniforma/prapor-1.jpg'
             width={900}
             height={600}
             alt='Bojový prapor'
-            className='col-span-4 rounded-xl'
+            className='md:col-span-4 rounded-t-xl md:rounded-xl'
           />
 
-          <div className='z-10 col-span-2 -ml-14 backdrop-blur-sm drop-shadow-black'>
-            <div className='p-5 prose border-t prose-invert bg-black/70 rounded-xl max-w-none border-stone-800'>
+          <div className='z-10 md:col-span-2 md:-ml-14 backdrop-blur-sm md:drop-shadow-black'>
+            <div className='p-5 prose border-t prose-invert bg-black/70 rounded-b-xl md:rounded-xl max-w-none border-stone-800'>
               <p>
                 Základní řád (Zákl-1) říká: „Bojový prapor je symbolem vojenské
                 cti a statečnosti, připomíná každému vojákovi povinnost sloužit
@@ -167,20 +167,20 @@ const UniformPage = () => {
                 byl 71. výsadkovému údernému praporu navrácen v roce 1991 a od
                 té doby provází chrudimský výsadkový útvar. 43. výsadkový pluk
                 nad to používá stejné krycí číslo jako 71. výsadkový prapor do
-                roku 1949 – VÚ 2298.
+                roku 1949 - VÚ 2298.
               </p>
             </div>
           </div>
 
-          <div className='z-10 col-span-3 drop-shadow-black'>
-            <div className='p-5 prose border-t prose-invert bg-black/70 rounded-xl max-w-none border-stone-800'>
+          <div className='z-10 md:col-span-3 md:drop-shadow-black mt-10 md:mt-0'>
+            <div className='p-5 prose border-t prose-invert bg-black/70 rounded-t-xl md:rounded-xl max-w-none border-stone-800'>
               <p>
                 Na bojovém praporu (100x100 cm) je na podkladě tmavě červené
                 barvy umístěn barevný znak 43. výsadkového pluku: na kruhovém,
                 děleném, tmavočerveně lemovaném štítě je v horní, černé polovině
                 položen britský výsadkový symbol z let druhé světové války, bílá
                 (stříbrná) puma na padáku, doplněná z obou stran světle modrými
-                křídly o sedmi letkách. Dolní polovina je bílo – červeno – modře
+                křídly o sedmi letkách. Dolní polovina je bílo - červeno - modře
                 dvakrát polcená. Lem znaku je v tmavočervené barvě výsadkového
                 baretu.
               </p>
@@ -200,7 +200,7 @@ const UniformPage = () => {
             width={900}
             height={902}
             alt='Bojový prapor'
-            className='col-span-3 rounded-xl'
+            className='md:col-span-3 rounded-b-xl md:rounded-xl'
           />
         </div>
 
@@ -208,12 +208,13 @@ const UniformPage = () => {
           Znak
         </h2>
 
-        <div className='grid items-center grid-cols-2 gap-5 p-10'>
+        <div className='grid items-center grid-cols-1 md:grid-cols-2 gap-5 p-10'>
           <Image
             src='/assets/images/logo/logo.svg'
             width={430}
             height={430}
             alt='Znak 43. výsadkového pluku'
+            className='w-full md:w-auto'
           />
 
           <div className='z-10 drop-shadow-black'>
@@ -255,7 +256,7 @@ const UniformPage = () => {
           techniky (černobílé vyobrazení).
         </p>
 
-        <div className='grid grid-cols-2 p-10 gap-14'>
+        <div className='grid grid-cols-1 md:grid-cols-2 p-10 gap-14'>
           {units.map((unit, index) => (
             <Unit key={unit.name} fullWidth={index === 0} {...unit} />
           ))}

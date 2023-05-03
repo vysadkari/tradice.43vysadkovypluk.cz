@@ -17,7 +17,7 @@ const Unit = ({
   return (
     <div
       className={`relative p-5 prose border prose-invert max-w-none border-stone-500 rounded-xl group ${
-        fullWidth && "col-span-2"
+        fullWidth && "md:col-span-2"
       }`}
     >
       <div className='absolute inset-x-0 top-0 flex flex-row justify-center gap-0 -translate-y-1/2 not-prose'>
