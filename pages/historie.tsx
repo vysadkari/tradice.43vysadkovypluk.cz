@@ -25,15 +25,15 @@ const TimelineItemLeft = ({
       </div>
       <div className='flex flex-col gap-5 pt-5 pb-10 pl-10 pr-5 prose prose-invert max-w-none'>
         <h2 className='mb-0 text-center text-shadow'>{title}</h2>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-5 items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-5 items-center'>
           <Image
             src={image}
             width={800}
             height={550}
             alt={title}
-            className='w-full my-0 rounded-lg drop-shadow-black z-0 md:grid-area-[1_1_1_4]'
+            className='w-full my-0 rounded-t-lg md:rounded-lg md:drop-shadow-black z-0 md:grid-area-[1_1_1_4]'
           />
-          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm md:grid-area-[1_3_1_5]'>
+          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-b-xl md:rounded-xl backdrop-filter backdrop-blur-sm md:grid-area-[1_3_1_5]'>
             {children}
           </p>
         </div>
@@ -55,8 +55,8 @@ const TimelineItemRight = ({
       </div>
       <div className='flex flex-col gap-5 pt-5 pb-10 pl-10 md:pl-5 pr-5 md:pr-10 prose prose-invert max-w-none'>
         <h2 className='mb-0 text-center text-shadow'>{title}</h2>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-5 items-center'>
-          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-xl backdrop-filter backdrop-blur-sm md:grid-area-[1_1_1_3] order-last md:order-first'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-5 items-center'>
+          <p className='my-0 text-justify z-10 bg-black/90 p-5 rounded-b-xl md:rounded-xl backdrop-filter backdrop-blur-sm md:grid-area-[1_1_1_3] order-last md:order-first'>
             {children}
           </p>
           <Image
@@ -64,7 +64,7 @@ const TimelineItemRight = ({
             width={800}
             height={550}
             alt={title}
-            className='w-full my-0 rounded-lg drop-shadow-black z-0 md:grid-area-[1_2_1_5]'
+            className='w-full my-0 rounded-t-lg md:rounded-lg md:drop-shadow-black z-0 md:grid-area-[1_2_1_5]'
           />
         </div>
       </div>
