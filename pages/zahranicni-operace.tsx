@@ -1,14 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import { ComposableMap, Geographies, Geography, Line } from "react-simple-maps";
 
 import Layout from "@/layout/Layout";
-import { AfghanistanFlag } from "@/components/Flags";
 import Deployment, { DeploymentData } from "@/components/Deployment";
 
-const getUrlWorld =
-  "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
+const getUrlWorld = "/data/world-countries.json";
 
 const countryBackground = (countryId: string) => {
   switch (countryId) {

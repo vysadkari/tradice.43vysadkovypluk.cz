@@ -75,9 +75,9 @@ export const YugoslaviaFlag = ({ className }: FlagProps) => {
       <path
         d='m 605.74283,121.56507 41.0313,126.26594 132.76599,0.006 -107.4068,78.04159 41.02231,126.26994 -107.4128,-78.03458 -107.41281,78.03458 41.02231,-126.26994 -107.4068,-78.04159 132.76599,-0.006 z'
         fill='#de0000'
-        fill-rule='evenodd'
+        fillRule='evenodd'
         stroke='#fcd115'
-        stroke-width='10.668'
+        strokeWidth='10.668'
         transform='translate(-5.7427979,-4.3058369)'
       />
     </svg>
