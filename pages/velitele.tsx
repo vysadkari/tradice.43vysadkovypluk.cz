@@ -34,7 +34,7 @@ const fantasticFour: Array<Person> = [
     name: "nprap. Robert Otáhal",
     position: "vrchní praporčík",
     photo: "/assets/images/velitele/portrety/robert-otahal.jpg",
-    bio: "K výsadkářům jsem nastoupil tři roky po ukončení vojenské základní služby, jako délesloužící, ihned po transformaci útvaru na 43.vmpr v roce 1994. Byla to cesta, jak se dostat k výsadkovým jednotkám, jež se honosí mottem: MEČE ARMÁDY HROT.",
+    bio: "K výsadkářům jsem nastoupil tři roky po ukončení vojenské základní služby, jako délesloužící, ihned po transformaci útvaru na 43.vmpr v roce 1994. Byla to cesta, jak se dostat k výsadkovým jednotkám, jež se honosí mottem: MEČE ARMÁDY HROT. Za 27 let služby u výsadkářů jsem měl to štěstí projít si všemi funkcemi „stříbrného sboru“ od velitele družstva, zástupce velitele čety, velitele čety, vedoucího praporčíka, až po současnou funkci vrchního praporčíka 43. výsadkového pluku. Mám za sebou několik zahraničních operací na Balkáně a v Asii. Jsem nesmírně vděčný za příležitost být při transformaci výsadkového vojska a podílet se na rozvoji AČR.",
   },
 ];
 
