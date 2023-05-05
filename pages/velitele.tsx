@@ -28,7 +28,7 @@ const fantasticFour: Array<Person> = [
     name: "pplk. Marek Štěpánek",
     position: "náčelník štábu",
     photo: "/assets/images/velitele/portrety/marek-stepanek.jpg",
-    bio: "",
+    bio: "K výsadkářům a 43. výsadkovému praporu jsem nastoupil v roce 2008 po studiu na Univerzitě obrany. Prošel jsem všemi důstojnickými funkcemi na výsadkové rotě, následně jsem působil jako zástupce náčelníka štábu pro operace. Ještě před vznikem pluku jsem zastával funkci zástupce velitele praporu, poté jsem se na dva roky odebral na odbor bojové přípravy Velitelství pro operace, abych se odtud vrátil na svoji současnou funkci náčelníka štábu 43. výsadkového pluku. Jsem odkojen výsadkáři a absolvoval jsem s nimi čtyři zahraniční nasazení, tři v Afghánistánu a jedno v Mali. Sloužit v Chrudimi je pro mne ctí a velkým závazkem.",
   },
   {
     name: "nprap. Robert Otáhal",
