@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tradice.43vysadkovypluk.cz/sitemap.xml
