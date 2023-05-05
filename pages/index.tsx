@@ -33,14 +33,33 @@ const promo: Array<CardProps> = [
 ];
 
 export default function Home() {
+  const title = "Tradice výsadkářů";
+  const description =
+    "Informace o historii výsadkářů, zahraničních operacích, velitelích, uniformě a noži Cháron.";
+  const url = "https://tradice.43vysadkovypluk.cz/";
+  const cardImage =
+    "https://tradice.43vysadkovypluk.cz/assets/images/og/homepage.png";
+
   return (
     <Layout>
       <Head>
-        <title>Tradice výsadkářů</title>
-        <meta
-          name='description'
-          content='Informace o historii výsadkářů, zahraničních operacích, velitelích, uniformě a noži Cháron.'
-        />
+        <title>{title}</title>
+        <meta name='description' content={description} />
+
+        <meta property='og:title' content={title} />
+        <meta property='og:description' content={description} />
+        <meta property='og:image' content={cardImage} />
+        <meta property='og:image:type' content='image/png' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
+        <meta property='og:image:alt' content={title} />
+        <meta property='og:url' content={url} />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content={title} />
+        <meta name='twitter:description' content={description} />
+        <meta name='twitter:image' content={cardImage} />
+
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

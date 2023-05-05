@@ -83,14 +83,33 @@ const units: Array<UnitData> = [
 ];
 
 const UniformPage = () => {
+  const title = "Uniforma - Tradice výsadkářů";
+  const description =
+    "Baret, bojový prapor, znak a označení jednotek. To všechno jsou symboly výsadkářů.";
+  const url = "https://tradice.43vysadkovypluk.cz/uniforma";
+  const cardImage =
+    "https://tradice.43vysadkovypluk.cz/assets/images/og/uniforma.png";
+
   return (
     <Layout>
       <Head>
-        <title>Uniforma - 43. výsadkový pluk</title>
-        <meta
-          name='description'
-          content='Baret, bojový prapor, znak a označení jednotek. To všechno jsou symboly výsadkářů.'
-        />
+        <title>{title}</title>
+        <meta name='description' content={description} />
+
+        <meta property='og:title' content={title} />
+        <meta property='og:description' content={description} />
+        <meta property='og:image' content={cardImage} />
+        <meta property='og:image:type' content='image/png' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
+        <meta property='og:image:alt' content={title} />
+        <meta property='og:url' content={url} />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content={title} />
+        <meta name='twitter:description' content={description} />
+        <meta name='twitter:image' content={cardImage} />
+
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

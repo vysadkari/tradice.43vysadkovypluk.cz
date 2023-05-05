@@ -215,14 +215,33 @@ const pastCommanders: Array<Unit> = [
 ];
 
 const CommandersPage = () => {
+  const title = "Velitelé - Tradice výsadkářů";
+  const description =
+    "Informace o současném velení 43. výsadkové pluku, ale také přehled bývalých velitelů.";
+  const url = "https://tradice.43vysadkovypluk.cz/velitele";
+  const cardImage =
+    "https://tradice.43vysadkovypluk.cz/assets/images/og/velitele.png";
+
   return (
     <Layout>
       <Head>
-        <title>Velitelé - 43. výsadkový pluk</title>
-        <meta
-          name='description'
-          content='Informace o současném velení 43. výsadkové pluku, ale také přehled bývalých velitelů.'
-        />
+        <title>{title}</title>
+        <meta name='description' content={description} />
+
+        <meta property='og:title' content={title} />
+        <meta property='og:description' content={description} />
+        <meta property='og:image' content={cardImage} />
+        <meta property='og:image:type' content='image/png' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
+        <meta property='og:image:alt' content={title} />
+        <meta property='og:url' content={url} />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content={title} />
+        <meta name='twitter:description' content={description} />
+        <meta name='twitter:image' content={cardImage} />
+
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

@@ -73,14 +73,33 @@ const TimelineItemRight = ({
 };
 
 const HistoryPage = () => {
+  const title = "Historie - Tradice výsadkářů";
+  const description =
+    "Nejdůležitější milníky při formování výsadkového vojska u nás. Od 2. světové války po současný výsadkový pluk.";
+  const url = "https://tradice.43vysadkovypluk.cz/historie";
+  const cardImage =
+    "https://tradice.43vysadkovypluk.cz/assets/images/og/historie.png";
+
   return (
     <Layout>
       <Head>
-        <title>Historie - 43. výsadkový pluk</title>
-        <meta
-          name='description'
-          content='Nejdůležitější milníky při formování výsadkového vojska u nás. Od 2. světové války po současný výsadkový pluk.'
-        />
+        <title>{title}</title>
+        <meta name='description' content={description} />
+
+        <meta property='og:title' content={title} />
+        <meta property='og:description' content={description} />
+        <meta property='og:image' content={cardImage} />
+        <meta property='og:image:type' content='image/png' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
+        <meta property='og:image:alt' content={title} />
+        <meta property='og:url' content={url} />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content={title} />
+        <meta name='twitter:description' content={description} />
+        <meta name='twitter:image' content={cardImage} />
+
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

@@ -126,7 +126,7 @@ const contacts: Array<ContactRecord> = [
       <a
         href='https://mapy.cz/s/bamumocava'
         target='_blank'
-        rel='noreferrer'
+        rel='noopener noreferrer'
         className='flex items-center hover:underline'
       >
         <address className='not-italic'>
