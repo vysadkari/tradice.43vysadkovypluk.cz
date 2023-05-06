@@ -23,7 +23,7 @@ export type MenuItem = {
 const Logo = () => {
   return (
     <Image
-      src='assets/images/logo/logo-round.svg'
+      src='/assets/images/logo/logo-round.svg'
       className='absolute h-16 top-3 drop-shadow-black'
       alt='43. výsadkový pluk'
       width={100}
