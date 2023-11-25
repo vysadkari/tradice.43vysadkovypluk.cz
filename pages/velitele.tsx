@@ -13,14 +13,8 @@ type Unit = {
 
 const fantasticFour: Array<Person> = [
   {
-    name: "plk. Jiří Líbal",
-    position: "velitel 43. výsadkového pluku",
-    photo: "/assets/images/velitele/portrety/jiri-libal.jpg",
-    bio: "Do „výsadkářské“ Chrudimi jsem nastoupil z Prahy, kde jsem zastával funkci náčelníka výsadkového vojska a výsadkové a záchranné služby na generálním štábu. Díky tomu jsem měl vliv i přehled, co pluk dělá a potřebuje. Výsadkářem jsem už od svého studia na vysoké škole ve Vyškově, kde jsem byl členem skupiny, která prováděla výsadkový výcvik. Všechny mé pozice v armádě byly vždy výsadkové (od velitele čety po velitele praporu). Zkušenosti jsem také získával na misích v Bosně, Kosovu, Afganistánu a Litvě, jako instruktor a velitel kurzu Komando a BMATT a v neposlední řadě na školách v USA (Command and General Staff College a US Army War College). Je pro mě ctí velet 43. výsadkovému pluku.",
-  },
-  {
     name: "pplk. Petr Matouš",
-    position: "zástupce velitele",
+    position: "velitel 43. výsadkového pluku",
     photo: "/assets/images/velitele/portrety/petr-matous.jpg",
     bio: "K výsadkovému vojsku mě to táhlo už od vojenské vysoké školy z dob skupiny Commandos, kdy jsme začali skákat v civilu. Výsadkářem jsem byl následně celou předchozí službu u 601. skupiny speciálních sil, se kterou jsem byl 4x nasazen v Afghánistánu a 2x v Africe. Během své služby jsem působil na Úřadu vlády jako vojenský přidělenec MO - poradce předsedy vlády a koordinátor agendy čelení hybridnímu působení (pro Odbornou pracovní skupinu Bezpečnostní rady státu). Na výsadkový pluk jsem nastoupil k 1. 11. 2022 z pozice poradce ministryně obrany. Být součástí velení 43. výsadkového pluku pro mě znamená čest a hrdost. ",
   },
@@ -44,9 +38,15 @@ const pastCommanders: Array<Unit> = [
     logo: "/assets/images/velitele/znaky/43vp.png",
     commanders: [
       {
+        name: "pplk. Petr Matouš",
+        photo: "/assets/images/velitele/portrety/petr-matous-2.jpg",
+        from: 2023,
+      },
+      {
         name: "plk. Jiří Líbal",
         photo: "/assets/images/velitele/portrety/jiri-libal-2.jpg",
-        from: 2021,
+        from: 2022,
+        to: 2023,
       },
       {
         name: "plk. Róbert Dziak",
