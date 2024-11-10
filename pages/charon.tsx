@@ -71,14 +71,14 @@ const CharonPage = () => {
           <div className='flex flex-col items-center gap-5 p-5 text-xl text-white border-t bg-black/70 drop-shadow-black border-stone-800 rounded-xl'>
             <span>Kaleno na</span>
             <span className='text-6xl font-semibold text-shadow text-primary'>
-              62
+              60
             </span>
             <span>Rockwella</span>
           </div>
           <div className='flex flex-col items-center gap-5 p-5 text-xl text-white border-t bg-black/70 drop-shadow-black border-stone-800 rounded-xl'>
             <span>Předáno přes</span>
             <span className='text-6xl font-semibold text-shadow text-primary'>
-              400
+              500
             </span>
             <span>nožů</span>
           </div>
@@ -107,15 +107,22 @@ const CharonPage = () => {
                 oceli 14260 o tvrdosti 56-58 HRC.
               </p>
               <p>
-                Nově je Cháron vyráběn ze špičkové práškové oceli K-390 rakouské
-                firmy Böhler o tvrdosti 61-62 HRC. Špičkových řezných vlastností
-                a extrémní houževnatosti by nešlo dosáhnout, pokud by byl
-                vyroben z nerezové oceli.
+                Poté se nůž Cháron vyráběl z práškové oceli K-390 rakouské firmy
+                Böhler tvrdosti 61-62 HRC. Špičkových řezných vlastností a
+                extrémní houževnatosti by totiž nešlo dosáhnout, pokud by byl
+                nůž vyroben z nerezové oceli.
               </p>
               <p>
-                Nože jsou broušeny pod vrcholovým úhlem 35°, brusnou sadou s
-                diamantovými brousky o zrnitosti 240 - 3000 grit, s ostřím
-                finálně vytaženým kůží.
+                Výsadkáři chtějí ale to nejlepší, proto je v současné době
+                Cháron vyráběn z prémiové, vysoce legované oceli Sleipner
+                švédské firmy Uddeholm o tvrdosti do 60 HRC. Tato ocel výrazně
+                lépe odolává korozi, a přitom si zachovává vynikající řezné a
+                mechanické vlastnosti.
+              </p>
+              <p>
+                Nože jsou broušeny pod vrcholovým úhlem 35º, brusnou sadou s
+                diamantovými brousky o zrnitosti 240-3000 grit, s ostřím finálně
+                vytaženým kůží.
               </p>
             </div>
           </div>
