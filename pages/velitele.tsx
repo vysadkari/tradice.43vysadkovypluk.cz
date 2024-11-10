@@ -13,22 +13,22 @@ type Unit = {
 
 const fantasticFour: Array<Person> = [
   {
-    name: "pplk. Petr Matouš",
+    name: "plk. Petr Tesařík",
     position: "velitel 43. výsadkového pluku",
-    photo: "/assets/images/velitele/portrety/petr-matous.jpg",
-    bio: "K výsadkovému vojsku mě to táhlo už od vojenské vysoké školy z dob skupiny Commandos, kdy jsme začali skákat v civilu. Výsadkářem jsem byl následně celou předchozí službu u 601. skupiny speciálních sil, se kterou jsem byl 4x nasazen v Afghánistánu a 2x v Africe. Během své služby jsem působil na Úřadu vlády jako vojenský přidělenec MO - poradce předsedy vlády a koordinátor agendy čelení hybridnímu působení (pro Odbornou pracovní skupinu Bezpečnostní rady státu). Na výsadkový pluk jsem nastoupil k 1. 11. 2022 z pozice poradce ministryně obrany. Být součástí velení 43. výsadkového pluku pro mě znamená čest a hrdost. ",
+    photo: "/assets/images/velitele/portrety/petr-tesarik-2.jpg",
+    bio: "Kariéru profesionálního vojáka jsem zahájil nástupem na Vysokou vojenskou školu ve Vyškově v roce 2000. Po jejím absolvování jsem byl v roce 2003 zařazen na funkci velitele mechanizované čety u 41. mechanizovaného praporu v Benešově. Službu u výsadkářů v Chrudimi jsem začal v roce 2009. Během mé kariéry jsem byl pětkrát nasazen v zahraničních operacích, konkrétně v Kosovu, Iráku a Afghánistánu. Současně jsem měl příležitost se vzdělávat na Command and Staff College v Quanticu. V letech 2021-2024 jsem působil na velitelství MNC NE ve Štětíně a měl tak možnost pracovat a získávat zkušenosti v mezinárodním prostředí struktur NATO. Vést 43. výsadkový pluk je pro mne čest a s ohledem na moji celoživotní vojenskou kariéru i srdeční záležitost.",
   },
   {
     name: "pplk. Marek Štěpánek",
-    position: "náčelník štábu",
-    photo: "/assets/images/velitele/portrety/marek-stepanek.jpg",
-    bio: "K výsadkářům a 43. výsadkovému praporu jsem nastoupil v roce 2008 po studiu na Univerzitě obrany. Prošel jsem všemi důstojnickými funkcemi na výsadkové rotě, následně jsem působil jako zástupce náčelníka štábu pro operace. Ještě před vznikem pluku jsem zastával funkci zástupce velitele praporu, poté jsem se na dva roky odebral na odbor bojové přípravy Velitelství pro operace, abych se odtud vrátil na svoji současnou funkci náčelníka štábu 43. výsadkového pluku. Jsem odkojen výsadkáři a absolvoval jsem s nimi čtyři zahraniční nasazení, tři v Afghánistánu a jedno v Mali. Sloužit v Chrudimi je pro mne ctí a velkým závazkem.",
+    position: "zástupce velitele",
+    photo: "/assets/images/velitele/portrety/marek-stepanek-2.jpg",
+    bio: "K výsadkářům a 43. výsadkovému praporu jsem nastoupil v roce 2008 po studiu na Univerzitě obrany. Prošel jsem všemi důstojnickými funkcemi na výsadkové rotě, následně jsem působil jako zástupce náčelníka štábu pro operace. Ještě před vznikem pluku jsem zastával funkci zástupce velitele praporu, poté jsem se na dva roky odebral na odbor bojové přípravy Velitelství pro operace, abych se odtud vrátil do Chrudimi jako náčelník štábu, a poté jako zástupce velitele 43. výsadkového pluku. Jsem odkojen výsadkáři a absolvoval jsem s nimi čtyři zahraniční nasazení, tři v Afghánistánu a jedno v Mali. Sloužit v Chrudimi je pro mne ctí a velkým závazkem.",
   },
   {
-    name: "nprap. Robert Otáhal",
+    name: "prap. Petr Kopecký",
     position: "vrchní praporčík",
-    photo: "/assets/images/velitele/portrety/robert-otahal.jpg",
-    bio: "K výsadkářům jsem nastoupil tři roky po ukončení vojenské základní služby, jako délesloužící, ihned po transformaci útvaru na 43.vmpr v roce 1994. Byla to cesta, jak se dostat k výsadkovým jednotkám, jež se honosí mottem: MEČE ARMÁDY HROT. Za 27 let služby u výsadkářů jsem měl to štěstí projít si všemi funkcemi „stříbrného sboru“ od velitele družstva, zástupce velitele čety, velitele čety, vedoucího praporčíka, až po současnou funkci vrchního praporčíka 43. výsadkového pluku. Mám za sebou několik zahraničních operací na Balkáně a v Asii. Jsem nesmírně vděčný za příležitost být při transformaci výsadkového vojska a podílet se na rozvoji AČR.",
+    photo: "/assets/images/velitele/portrety/petr-kopecky.jpg",
+    bio: "Po různých životních cestách jsem se v roce 2003 rozhodl vstoupit do AČR. A kam jinam, než k těm nejlepším, k chrudimským výsadkářům. Za těch jednadvacet let jsem si prošel několik funkcí na 3. výsadkové rotě, potom jsem si na rok odskočil na štáb jako instruktor bojové přípravy a poté jsem pracoval několik let jako vedoucí praporčík 3. výsadkové roty/komanda. V průběhu let jsem se nejen jako instruktor více nebo méně podílel na organizaci a pořádání výběrových řízení, doplňujících intenzivních výcviků a mnoha dalších kurzů a cvičení. Nemalou část kariéry jsem strávil v zahraničních operacích, ať už na Balkáně, v Afghánistánu nebo v Mali. Být vrchním praporčíkem 43. výsadkového pluku je obrovský závazek vůči všem výsadkářům a jejich blízkým. To, že můžu sloužit své vlasti, pro mě nejkrásnější zemi na světě, navíc obklopen těmi nejlepšími lidmi, je víc, než by mě kdy napadlo si přát.",
   },
 ];
 
@@ -38,9 +38,15 @@ const pastCommanders: Array<Unit> = [
     logo: "/assets/images/velitele/znaky/43vp.png",
     commanders: [
       {
+        name: "plk. Petr Tesařík",
+        photo: "/assets/images/velitele/portrety/petr-tesarik-3.jpg",
+        from: 2024,
+      },
+      {
         name: "pplk. Petr Matouš",
         photo: "/assets/images/velitele/portrety/petr-matous-2.jpg",
         from: 2023,
+        to: 2024,
       },
       {
         name: "plk. Jiří Líbal",
